@@ -11,9 +11,60 @@
             border-collapse: collapse;
         }
 
-        
+        th, td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
     </style>
 </head>
-<body>
+<body style="background-color: rgb(209, 176, 230);">
+    <h2>A Basic HTML table</h2>
+    <table style="width: auto;">
+        <tr>
+            <th>No.</th>
+            <th>Nama Mahasiswa</th>
+            <th>Program Studi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Damar Galih</td>
+            <td>Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Widianingsih</td>
+            <td>Hubungan Internasional</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Cell that spans two columns</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Nama Mahasiswa</th>
+            <th>Prodi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Damar Galih</td>
+            <td rowspan="2">Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Iftita Qurotul A.F.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Antika Tri A. L.</td>
+            <td>Akuntansi</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Nur Wahyudi</td>
+            <td>Rekayasa Perangkat Lunak</td>
+        </tr>
+    </table>
 </body>
 </html>
