@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header_image {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url("./assets/cover-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    margin-bottom: 10px;
+}
+
+/* .container {
+    width: 80%;
+    margin: 50px auto;
+    border: 3px solid;
+    padding: 5px;
+} */
+
+.container {
+    width: 100vw; /* Menggunakan viewport width agar container sesuai lebar layar */
+    height: 100vh; /* Menggunakan viewport height agar container sesuai tinggi layar */
+    justify-content: center;
+    align-items: center;
+}
+
+/* header {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+} */
+
+aside {
+    background-color: blue;
+    padding: 40px;
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 5px;
+}
+
+main {
+    padding: 40px;
+    background-color: red;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: chartreuse;
+    padding: 30px;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+}
