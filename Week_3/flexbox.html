@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            border: 3px solid;
+            padding: 5px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+        }
+
+        aside {
+            background-color: blue;
+            padding: 40px;
+        }
+
+        nav {
+            background-color: blueviolet;
+            padding: 40px;
+        }
+
+        main {
+            padding: 40px;
+            background-color: red;
+            flex: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: chartreuse;
+            padding: 30px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content">
+            <div class="sidebar">
+                <aside>aside</aside>
+                <nav>nav</nav>
+            </div>
+            <main>main</main>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
