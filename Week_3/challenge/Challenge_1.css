@@ -26,13 +26,17 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 300px;
-    border-bottom: 5px solid white;
+    border-bottom: 4px solid white;
 }
 
 .content {
     display: flex;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     color: white;
+}
+
+.sidebar {
+    flex: 1;
 }
 
 nav {
@@ -107,7 +111,7 @@ main h1 {
     margin-bottom: 20px;
 }
 
-table, th, td {
+.works-table, .works-table th, .works-table td {
     border: 1px solid white;
 }
 
@@ -137,12 +141,101 @@ p strong {
     font-size: 14px;
 }
 
-
-footer {
-    background-color: chartreuse;
-    padding: 30px;
+.contact {
+    padding: 50px;
+    background-color: #00795D;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
-.sidebar {
-    flex: 1;
+.contact h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;   
+}
+
+.contact form p {
+    font-size: 14px;
+}
+
+.contact-table, .contact-table td {
+    /* border: 1px solid; */
+    padding-right: 50px;
+}
+
+.contact-table tr td:first-child {
+    text-align: right;
+    width: 50%;
+    font-weight: bold;
+}
+
+.contact-table tr td:nth-child(2){
+    text-align: left;
+}
+
+.contact-table input {
+    width: 50%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00795D;
+}
+
+.contact-table input:focus {
+    font-weight: bold;
+    font-size: 12px;
+    color: #00795D;
+}
+
+select {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00795D; 
+}
+
+select option {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 10px;
+    margin: 8px 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    color: #00795D;
+}
+
+textarea::placeholder {
+    color: #00795D;
+}
+
+input[type="submit"], input[type="reset"] {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    background-color: #009E7B;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #00795D;
+    padding: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
 }

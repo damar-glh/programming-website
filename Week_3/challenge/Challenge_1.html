@@ -32,7 +32,7 @@
             </div>
             <main id="works">
                 <h1>WORK EXPERIENCE</h1>
-                <table aria-describedby="WORK EXPERIENCE">
+                <table aria-describedby="WORK EXPERIENCE" class="works-table">
                     <tr>
                         <th>YEAR</th>
                         <th>WORK</th>
@@ -62,7 +62,46 @@
                 <p><strong>Note :</strong> This is just sample data created for illustrative purposes. I can fill in the data according to my needs or change the type of job and year according to my preferences.</p>
             </main>
         </div>
-        <footer>footer</footer>
+        <div class="contact" id="contact">
+            <h1>CONTACT</h1>
+            <form action="" method="">
+                <table aria-describedby="contact" class="contact-table">
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="first_name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="last_name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td>
+                            <select name="department" id="">
+                                <option>-- Select Your Department --</option>
+                                <option value="informatics">Software Engineer</option>
+                                <option value="accounting">Project Manager</option>
+                                <option value="economy">Data Analyst</option>
+                                <option value="civil">Web Developer</option>
+                                <option value="architecture">Exc.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your Comments</td>
+                        <td><textarea name="" id="" cols="30" rows="10" placeholder="Your comment ... "></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Save" name="save">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <footer>&copy; 2024 Damar Galih; Challenge Programming Website.</footer>
     </div>
 </body>
 </html>
