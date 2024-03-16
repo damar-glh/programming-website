@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .header_image {
     width: 100%;
     height: auto;
@@ -22,14 +29,8 @@ header {
     border-bottom: 5px solid white;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
 .content {
+    display: flex;
     border-bottom: 5px solid white;
     color: white;
 }
@@ -65,7 +66,7 @@ ul li a:hover {
 }
 
 aside {
-    background-color: #FDBB54;
+    background-color: #F68B36;
     padding: 50px;
 }
 
@@ -95,21 +96,51 @@ aside p {
 }
 
 main {
-    padding: 40px;
+    padding: 50px;
     background-color: #D63A5F;
     flex: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+main h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th {
+    font-size: 17.5px;
+    font-weight: bold;
+    height: 50px;
+}
+
+td {
+    height: 35px;
+    font-size: 14px;
+}
+
+main p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+p strong {
+    font-weight: bold;
+    font-size: 14px;
+}
+
 
 footer {
     background-color: chartreuse;
     padding: 30px;
-}
-
-.content {
-    display: flex;
 }
 
 .sidebar {
