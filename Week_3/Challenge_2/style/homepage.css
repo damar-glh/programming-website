@@ -15,6 +15,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: #581C87;
 }
 
 .top {
@@ -30,40 +31,48 @@
     color: white;
     max-width: 400px;
     text-align: justify;
+    font-weight: 500;
 }
 
 nav {
     background-color: #6B21A8;
     padding: 10px;
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-ul {
+nav h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;   
+}
+
+.list-nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
-    margin: 0 0 10px 225px;
 }
 
-ul li {
+.list-nav li {
     list-style: none;
     padding: 5px;
 }
 
-ul li a {
+.list-nav li a {
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     color: white;
 }
 
-ul li:hover {
+.list-nav li:hover {
     background-color: #F59E0B;
     border-radius: 5px;
 }
 
-ul li a:hover {
+.list-nav li a:hover {
     animation: ease-in-out;
     animation-duration: 3s;
 }
@@ -117,4 +126,51 @@ ul li a:hover {
   
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.faculty {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 25px;
+    background-color: #581C87;
+    color: white;
+}
+
+.content {
+    border: 3px solid #6B21A8;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.content img {
+    width: 250px;
+    height:auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.content p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.list-faculty {
+    display: inline-block;
+    list-style: inside;
+}
+
+.list-faculty li {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: 500;
+    margin: 5px 0;
 }
