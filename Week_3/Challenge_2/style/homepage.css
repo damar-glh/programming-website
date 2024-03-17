@@ -131,6 +131,7 @@ nav h1 {
 .faculty {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     padding: 30px;
     gap: 25px;
     background-color: #581C87;
@@ -173,4 +174,20 @@ nav h1 {
     text-align: justify;
     font-weight: 500;
     margin: 5px 0;
+}
+
+.list-faculty .stroke {
+    border-bottom: 3px solid #6B21A8;
+    margin: 5px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #6B21A8;
+    padding: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
 }
