@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoI16uLrA9TneNEoa7RxnatzjcDSCmG1MXXSRIGASXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Diagram dengan Javascript</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="mb-5">
+            <h1>Hobi Mahasiswa</h1>
+            <p>Data Hobi Mahasiswa kelas TI</p>
+        </div>
+        <div id="chart" style="width: 600px; height: 400px;"></div>
+    </div>
+    <script src="https://rawgit.com/HumbleSoftware/Flotr2/master/flotr2.min.js"></script>
+    <script>
+        window.onload = function () {
+            var data = [{
+                    data: [
+                        [0, 40]
+                    ],
+                    label: "Bermain Game"
+                }, {
+                    data: [
+                        [0, 30]
+                    ],
+                    label: "Nonton Anime"
+                },
+                {
+                    data: [
+                        [0, 7]
+                    ],
+                    label: "Membaca Buku"
+                }, {
+                    data: [
+                        [0, 10]
+                    ],
+                    label: "Mancing"
+                },
+                {
+                    data: [
+                        [0, 13]
+                    ],
+                    label: "Belajar"
+                },
+            ];
+            Flotr.draw(document.getElementById("chart"), data, {
+                title: "Hobby di kelas D3 IT B",
+                fontColor: "#DEE2E6",
+                pie: {
+                    show: true,
+                },
+                yaxis: {
+                    showLabels: false,
+                    color: "#FFFFFF",
+                },
+                xaxis: {
+                    showLabels: false,
+                    color: "#FFFFFF",
+                },
+                grid: {
+                    horizontalLines: false,
+                    verticalLines: false,
+                    tickColor: "#545454",
+                },
+            });
+        };
+    </script>
+</body>
+
+</html>

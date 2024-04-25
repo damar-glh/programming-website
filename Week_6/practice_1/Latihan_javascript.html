@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript</title>
+    <script type="text/javascript">
+        function message() {
+            alert("This alert box was called with the onload event")
+        }
+
+        function myfunction() {
+            alert("HELLO Matkul Pemorg. Web !!")
+        }
+
+        function myfunctions(txt) {
+            alert(txt)
+        }
+        var d = new Date()
+        var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+        var monthname = new
+        Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+        document.write(weekday[d.getDay()] + " ")
+        document.write(d.getDate() + ",")
+        document.write(monthname[d.getMonth()] + " ")
+        document.write(d.getFullYear())
+    </script>
+    <script type="text/javascript" src="program.js"></script>
+
+<body onload="message()">
+    <script type="text/javascript">
+        document.write("<h1>Hello World!</h1>")
+        </script>
+        <hr>
+        <form>
+        <input type="button" onclick="myfunction()" value="Call function">
+        </form>
+        <p>By pressing the button, a function will be called. The function will alert a message.</p>
+        <hr>
+        <input type="button" onclick="myfunctions('Good Morning!')" value="Selamat Pagi">
+</body>
+
+</html>
