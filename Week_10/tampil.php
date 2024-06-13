@@ -54,11 +54,10 @@
                 ?>
             </tbody>
         </table>
-        <a href="print.php"><button style="margin-top: 15px;">Print Stok</button></a>
+        <a href="tampil.php" onclick="window.print()"><button style="margin-top: 15px;">Print Stok</button></a>
         <p>
         <p>
-            <a href="logout.php"><button>Log Out</button>
-            </a>
+            <a href="logout.php"><button>Log Out</button></a>
     </center>
 </body>
 
