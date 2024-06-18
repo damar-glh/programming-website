@@ -13,6 +13,7 @@
         .hidden {
             display: none;
         }
+
         * {
             font-family: "Poppins", sans-serif;
         }
@@ -24,14 +25,14 @@
         <div class="text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">Welcome to PMB Registration</h2>
             <p class="text-gray-800 mb-6">Join us and shape your future with our excellent programs.</p>
-            <img src="../assets/mhs.jpg" alt="Campus" class="w-full mx-auto rounded-xl">
+            <img src="../../assets/mhs.jpg" alt="Campus" class="w-full mx-auto rounded-xl">
         </div>
     </div>
 
     <div class="w-1/2 bg-white flex flex-col items-center justify-center p-10">
         <h2 class="text-4xl font-bold text-gray-800 mb-4">Register</h2>
         <p class="text-gray-600 mb-6">Please complete to finish your Registration.</p>
-        <form id="registrationForm" action="process.php" method="post" class="w-full max-w-md">
+        <form id="registrationForm" action="Formsql.php" method="post" class="w-full max-w-md">
             <div id="section1">
                 <div class="flex justify-between gap-2">
                     <div class="mb-6">
@@ -45,7 +46,7 @@
                 </div>
                 <div class="mb-6">
                     <label for="nim" class="block text-gray-700">Student ID Number</label>
-                    <input type="number" id="nim" name="nim" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required>
+                    <input type="text" id="nim" name="nim" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required>
                 </div>
                 <div class="mb-6">
                     <label for="birthplace" class="block text-gray-700">Birthplace</label>
@@ -65,7 +66,7 @@
                     <span class="block text-gray-700">Gender</span>
                     <div class="mt-2">
                         <label class="inline-flex items-center">
-                            <input type="radio" id="male" name="gender" value="Male" class="form-radio" required>
+                            <input type="radio" id="male" name="gender" value="Male" class="form-radio" required checked> <!-- Add checked attribute here -->
                             <span class="ml-2">Male</span>
                         </label>
                         <label class="inline-flex items-center ml-6">
@@ -74,23 +75,25 @@
                         </label>
                     </div>
                 </div>
+
                 <div class="mb-4">
                     <label for="address" class="block text-gray-700">Address</label>
-                    <textarea id="address" name="address" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required></textarea>
+                    <textarea id="address" name="address" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required placeholder="Enter your address here"></textarea>
                 </div>
+
                 <div class="mb-4">
                     <label for="study_program" class="block text-gray-700">Study Program:</label>
                     <select id="study_program" name="study_program" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required>
-                        <option value="BSc Computer Science">S1 Informatics</option>
-                        <option value="BSc Information Systems">S1 System Information</option>
-                        <option value="BSc Computer Engineering">S1 Computer Engineering</option>
+                        <option value="S1-Informatics">S1-Informatics</option>
+                        <option value="S1-System Information">S1-System Information</option>
+                        <option value="S1-Computer Engineering">S1-Computer Engineering</option>
                     </select>
                 </div>
                 <div class="mb-4">
                     <span class="block text-gray-700">Hobbies</span>
                     <div class="mt-2">
                         <label class="inline-flex items-center">
-                            <input type="checkbox" id="reading" name="hobbies[]" value="reading" class="form-checkbox text-blue-600">
+                            <input type="checkbox" id="reading" name="hobbies[]" value="reading" class="form-checkbox text-blue-600" checked>
                             <span class="ml-2">Reading</span>
                         </label>
                         <label class="inline-flex items-center ml-6">
