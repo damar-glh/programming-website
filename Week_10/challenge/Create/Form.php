@@ -32,7 +32,7 @@
     <div class="w-1/2 bg-white flex flex-col items-center justify-center p-10">
         <h2 class="text-4xl font-bold text-gray-800 mb-4">Register</h2>
         <p class="text-gray-600 mb-6">Please complete to finish your Registration.</p>
-        <form id="registrationForm" action="Formsql.php" method="post" class="w-full max-w-md">
+        <form id="registrationForm" action="FormSql.php" method="post" class="w-full max-w-md">
             <div id="section1">
                 <div class="flex justify-between gap-2">
                     <div class="mb-6">
