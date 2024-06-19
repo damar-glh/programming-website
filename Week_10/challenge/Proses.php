@@ -22,12 +22,10 @@
         <table class="w-full bg-white border-2">
             <thead>
                 <tr>
-                    <th class="py-2">First Name</th>
-                    <th class="py-2">Last Name</th>
+                    <th class="py-2">Full Name</th>
                     <th class="py-2">NIM</th>
                     <th class="py-2">Gender</th>
-                    <th class="py-2">Birthplace</th>
-                    <th class="py-2">Birthdate</th>
+                    <th class="py-2">Place, Birthdate</th>
                     <th class="py-2">Address</th>
                     <th class="py -2">Study</th>
                     <th class="py-2">Hobbies</th>
@@ -42,12 +40,14 @@
 
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr class='text-center border-2'>";
-                    echo "<td class='py-2'>" . htmlspecialchars($row['first_name']) . "</td>";
-                    echo "<td class='py-2'>" . htmlspecialchars($row['last_name']) . "</td>";
+                    $full_name = htmlspecialchars($row['first_name']) . ' ' . htmlspecialchars($row['last_name']);
+                    echo "<tr class='text-center border-2'>";
+                    $ttl = htmlspecialchars($row['birthplace']) . ', ' . htmlspecialchars($row['birthdate']);
+                    echo "<tr class='text-center border-2'>";
+                    echo "<td class='py-2'>" . $full_name . "</td>";
                     echo "<td class='py-2'>" . htmlspecialchars($row['nim']) . "</td>";
                     echo "<td class='py-2'>" . htmlspecialchars($row['gender']) . "</td>";
-                    echo "<td class='py-2'>" . htmlspecialchars($row['birthplace']) . "</td>";
-                    echo "<td class='py-2'>" . htmlspecialchars($row['birthdate']) . "</td>";
+                    echo "<td class='py-2'>" . $ttl . "</td>";
                     echo "<td class='py-2'>" . htmlspecialchars($row['address']) . "</td>";
                     echo "<td class='py-2'>" . htmlspecialchars($row['study_program']) . "</td>";
                     echo "<td class='py-2'>" . htmlspecialchars($row['hobbies']) . "</td>";
