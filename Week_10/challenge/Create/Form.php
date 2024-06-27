@@ -25,7 +25,7 @@
         <div class="text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-2">Welcome to PMB Registration</h2>
             <p class="text-gray-800 mb-6">Join us and shape your future with our excellent programs.</p>
-            <img src="../../assets/mhs.jpg" alt="Campus" class="w-full mx-auto rounded-xl">
+            <img src="../../assets/Registrations.svg" alt="Campus" class="w-full mx-auto rounded-xl">
         </div>
     </div>
 
@@ -57,6 +57,7 @@
                     <input type="date" id="birthdate" name="birthdate" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" required>
                 </div>
                 <div class="text-center">
+                    <a href="../Proses.php" class="px-6 py-2 bg-gray-400 text-white rounded-md shadow-md hover:bg-gray-500 focus:outline-none">Back</a>
                     <button type="button" onclick="toggleSections()" class="px-6 py-2 bg-blue-400 text-white rounded-md shadow-md hover:bg-blue-500 focus:outline-none">Next</button>
                 </div>
             </div>
